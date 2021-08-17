@@ -1,0 +1,30 @@
+name: "detectiv"
+version: 0.1.0
+author: "n01e0 <reoshiseki@gmail.com>"
+aboud: |
+  Linux detect virtual machine
+
+args:
+  - container:
+      help: "Only detect if it's running in a container"
+      short: c
+      long: container
+  - vm:
+      help: "Only detect if it's running in a vm"
+      short: v
+      long: vm
+  - chroot:
+      help: "Detects if it's running in a chroot() environment"
+      short: r
+      long: chroot
+  - private_users:
+      help: "Only detect if it's running in a user namespace"
+      long: private-users
+  - quiet:
+      help: "Don't print anything, just set return value"
+      short: q
+      long: quiet
+  - list:
+      help: "List all detectable types of virtualization"
+      short: l
+      long: list
